@@ -27,9 +27,7 @@ pseudocode 第16-17行 >>> 對應到 train.py 中的:
 
 
 
-## 下一步 製作 Expert Data 以及 Data Structure 構想
-
-###Expert Data 製作
+## 下一步 製作 Expert Data
 
 neuralcomapping 儲存配置
 
@@ -38,3 +36,6 @@ neuralcomapping 儲存配置
 
 預計會將 sensor_pose, origin_pose, obstacle, frontier, explored, explorable,  ??reward 放入 expert data 中。
 
+## Data Structure 構想
+
+如果要以 mountaincar 為基礎去修改成 unknown environment exploration 的話
