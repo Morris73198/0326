@@ -24,3 +24,8 @@ pseudocode 第10-14行迴圈 >>> 對應到 train.py 中的
    
 pseudocode 第16-17行 >>> 對應到 train.py 中的:
 ![architecture](Picture5.png)
+
+
+
+## 下一步 製作 expert data
+
