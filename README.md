@@ -38,4 +38,12 @@ neuralcomapping 儲存配置
 
 ## Data Structure 構想
 
-如果要以 mountaincar 為基礎去修改成 unknown environment exploration 的話
+如果要以 mountaincar 為基礎去修改成 unknown environment exploration 的話, 我們的 policy 架構就必須改為 Q Table。Q-Table是個狀態(state)-動作(action)的互動表。
+
+我們的狀態(state)有 sensor_pose, origin_pose, obstacle, frontier, explored, explorable 以及 reward。
+
+因此我們需要 allocate {num_robot * 3 + num_robot * 3 + map_size * map_size + map_size * map_size + map_size * map_size + map_size * map_size + num_robot} 的大小給 state。
+
+而我們的 action 是要從 forntier 中選取一個點作為下一步的目標點, 因此我們需要 allocate {map_size * map_size} 的大小給 action。
+
+如果以 neuralcomapping 為例, 我們至少必須 allocate {map_size ^ 4 (480 ^ 4)} 的大小給 QTable。
