@@ -47,3 +47,6 @@ neuralcomapping 儲存配置
 而我們的 action 是要從 forntier 中選取一個點作為下一步的目標點, 因此我們需要 allocate {map_size * map_size} 的大小給 action。
 
 如果以 neuralcomapping 為例, 我們至少必須 allocate {map_size ^ 4 (480 ^ 4)} 的大小給 QTable。
+
+![architecture](qta.drawio.png)
+
