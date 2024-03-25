@@ -30,5 +30,6 @@ pseudocode 第16-17行 >>> 對應到 train.py 中的:
 ## 下一步 製作 Expert Data 以及 Data Structure 構想
 
 neuralcomapping 儲存配置
+
 ![architecture](Picture6.png)
 
